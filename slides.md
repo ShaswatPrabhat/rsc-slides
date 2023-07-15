@@ -3,18 +3,17 @@ theme: default
 background: https://massivepixel.io/wp-content/uploads/2021/10/virtual-dom-hero-header-scaled-1.jpg
 class: text-center
 highlighter: shiki
-lineNumbers: false
 drawings:
   persist: false
 transition: slide-left
 title: React Server Components
-layout: cover
+layout: fact
 ---
 
 # React Server Components
 
 <span class="author">
-    Shaswat Prabhat | <carbon-logo-github/> ShaswatPrabhat | <carbon-logo-twitter/>@ShaswatPrabhat 
+    Shaswat Prabhat | <carbon-logo-github/> ShaswatPrabhat | <carbon-logo-twitter/>@ShaswatPrabhat | <img width="25" height="25" style="display:inline-block; align: center;" src="https://play-lh.googleusercontent.com/G6jK9S77RN0laf9_6nhDo3AVxbRP9SgMmt8ZmQjKQ2hibn9xhOY-W5YFn_7stJD1CA=w480-h960">scavengerhere
 </span>
 
 
@@ -23,7 +22,7 @@ p{
   font-size:24px;
 }
 .author {
-  font-size: 16px;
+  font-size: 20px;
   margin-top: 10%;
 }
 </style>
@@ -31,7 +30,7 @@ p{
 
 ---
 transition: slide-left
-layout: cover
+layout: statement
 ---
 
 # Story-time
@@ -67,11 +66,11 @@ layout: two-cols
 
 <v-click>
 
-  3a. Watch the Chef peel the onion ...<br/>
+  <p  style="font-size: 25px;">3a. Watch the Chef peel onions...<br/></p>
 </v-click>
 <v-click>
 
-  3b. Watch the Chef dice the carrot ...<br/>
+  <p  style="font-size: 25px;">3b. Watch the Chef dice carrots...<br/></p>
 </v-click>
 <v-click>
 
@@ -111,13 +110,13 @@ layout: two-cols
 
 <v-click>
 
-3a. Switch apps ...<br/>
+<p  style="font-size: 25px;">3a. Switch apps ...<br/></p>
 
 </v-click>
 
 <v-click>
 
-3b. Repeat 3 ...<br/>
+<p  style="font-size: 25px;">3b. Repeat 3 ...<br/></p>
 
 </v-click>
 
@@ -156,13 +155,13 @@ layout: center
 
 <v-click>
 
-3a. A fast shiny spectacle...<br/>
+<p  style="font-size: 25px;">3a. A fast shiny spectacle...<br/></p>
 
 </v-click>
 
 <v-click>
 
-3b. Hypnotized by the speed!<br/>
+<p  style="font-size: 25px;">3b. Hypnotized by the speed!<br/></p>
 
 </v-click>
 
@@ -185,7 +184,11 @@ transition: slide-left
 <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin-top: 10%; width: 100%">
 <img src="https://qph.cf2.quoracdn.net/main-qimg-02d26ca27d5f671dda41c0434aae5a1b" style="width:60%"/>
 
-<h1 style="margin-left: 20px; font-size: 40px; font-weight:400">Welcome to React Server Components</h1>
+<div style="margin-left: 30px;display: flex; flex-direction: column; max-width: 50%;">
+
+<h1 style="font-size: 55px; font-weight:400; line-height: 80px;">Welcome </h1>
+<h1 style="font-size: 55px; font-weight:400; line-height: 80px;">React Server Components</h1>
+</div>
 </div>
 ---
 layout: two-cols
@@ -247,7 +250,8 @@ transition: slide-left
 
 # A super quick vocabulary check
   <br/> 
-* <carbon-logo-react /> React - A client-side rendered library for components based Web Application 
+
+* <carbon-logo-react /> React - A client-side library for components based Web Application 
   <br/>  <br/>
 * <carbon-connection-two-way /> State - Intelligent variables
   <br/>  <br/>
@@ -285,20 +289,26 @@ width="600"
 src="https://s42821.pcdn.co/wp-content/uploads/2022/07/Image-AWS-Edge-Network@2x.png">
 * Rise of "Edge runtimes" - deploy closer to the user
 * The network chasm between Client and Server is decreasing
-<p style="font-size:12px; color: aqua"><mdi-alert-box /> Almost all layers of the OSI stack are becoming faster and scalabale.</p>
+<p style="font-size:12px; color: aqua"><mdi-alert-box /> Almost all layers of the OSI stack are becoming faster and scalabale </p>
 ---
 transition: slide-left
 ---
 
 # Path to Server Components - III
-  <br/>  <br/>
+  <br/>
+
 * <mdi-connection /> The database, services and browsers are quickly becoming more connected
   <br/>  <br/>
 * <mdi-server-remove /> While Client-Server Architecture is still relevant, we might need to <u>unlearn</u> some of the concepts
   <br/>  <br/>
 * <mdi-speedometer /> Our applications need to be ready to deliver content at scale and at speed
   <br/>  <br/>
-* <mdi-transit-connection-variant /> All of these ideas converge into RSC
+---
+transition: slide-left
+layout: statement
+---
+
+# <mdi-transit-connection-variant /> All of these ideas converge into RSC
 ---
 transition: slide-left
 layout: fact
@@ -376,6 +386,7 @@ layout: statement
 ---
 lineNumbers: true
 transition: slide-left
+layout: center
 ---
 ```ts  {all}{lines:true}
 import marked from 'marked'; // 35.9K (11.2K gzipped)
@@ -459,7 +470,7 @@ layout: default
   <br/>  <br/>
 <v-click>
 
-7. Over the wire we get a <u>JSON stream</u> that React understands.
+7. Over the wire we get a <u>JSON stream</u> that React understands
 
 </v-click>
 <v-click>
@@ -471,13 +482,14 @@ layout: default
 <v-click>
 
 <br/>  <br/>
-9. Page is ready with Client + Server Components <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f525/512.gif" alt="🔥" width="50" height="50" style="align: center; ">
+
+9. Page is ready with Client + Server Components <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f525/512.gif" alt="🔥" width="60" height="60" style="display:inline-block; align: center; margin-bottom: 20px">
 
 </v-click>
 
 <v-click>
 
-<p style="font-size:12px; color: aqua"><mdi-alert-box /> There are active parts played the Server, the Bundler and Caching in this flow.</p>
+<p style="font-size:12px; color: aqua"><mdi-alert-box /> There are active parts played the Server, the Bundler and Caching in this flow</p>
 
 </v-click>
 
@@ -486,7 +498,6 @@ transition: slide-left
 layout: statement
 ---
 # Puzzles
-
 
 ---
 transition: slide-left
@@ -517,7 +528,7 @@ layout: default
 
 <v-click>
 
-* What role will the bundlers play?
+* What role will bundlers play?
 
 </v-click>
 <v-click>
@@ -526,4 +537,18 @@ layout: default
 
 </v-click>
 
+---
+transition: slide-left
+layout: statement
+---
+# Open to audience!
+<br/> <br/>
+---
+transition: slide-left
+layout: statement
+---
+# Thank you!
 
+<img src="/mypicture.jpeg" style="width:20%; margin-left: 40%; margin-bottom: 40px"/>
+
+#### Shaswat Prabhat | <carbon-logo-github/> ShaswatPrabhat | <carbon-logo-twitter/>@ShaswatPrabhat | <img width="25" height="25" style="display:inline-block; align: center;" src="https://play-lh.googleusercontent.com/G6jK9S77RN0laf9_6nhDo3AVxbRP9SgMmt8ZmQjKQ2hibn9xhOY-W5YFn_7stJD1CA=w480-h960">scavengerhere
